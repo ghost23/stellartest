@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: floralwhite;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    position: relative;
+}
+
+.header .bigfatimage {
+    width: 55%;
+    height: 60%;
+    background-color: aquamarine;
+    margin: 50px auto;
+}
+
+.product {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+.product.open {
+    height: 1200px;
+}
+
+.product.open .content {
+    height: 880px;
+}
+
+.product .head {
+    position: relative;
+    height: 500px;
+    text-align: center;
+    padding-top: 50px;
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.product .head h2 {
+    font-size: 42px;
+}
+
+.product .content {
+    position: absolute;
+    top: 400px;
+    height: 580px;
+    transition: height 0.5s ease;
+}
+
+.product .content .bottleimage {
+    width: 300px;
+    height: 500px;
+    background-color: #0d3349;
+    position: absolute;
+    left: 10%;
+    top: -30px;
+}
+
+.product .content .copy {
+    color: white;
+    width: 20%;
+    position: relative;
+    line-height: 2em;
+    left: 40%;
+    top: 100px;
+}
+
+.product .content .copy .morecontent {
+
+    margin-top: 100px;
+
+}
+
+.product .content .images {
+    width: 300px;
+    height: 400px;
+    background-color: #550000;
+    position: absolute;
+    right: 10%;
+    top: 20px;
+}
+
+.product.red .head {
+    background-image: url("../images/FLBxjBd.jpg");
+}
+
+.product.red .content {
+    background-image: url("../images/NH1nLsV.png");
+}
+
+.product.green .head {
+    background-image: url("../images/GrxcU65.png");
+}
+
+.product.green .content {
+    background-image: url("../images/IuijDCu.png");
+}
+
+.product.yellow .head {
+    background-image: url("../images/SGrQ4Cb.png");
+}
+
+.product.yellow .content {
+    background-image: url("../images/uLrWbwC.jpg");
+}
+
+.product.blue .head {
+    background-image: url("../images/mUZX8ED.gif");
+}
+
+.product.blue .content {
+    background-image: url("../images/tkKlzYz.jpg");
+}
